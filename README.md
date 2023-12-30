@@ -27,6 +27,22 @@ Restarting the Jetty Server via WebServerManager
 webServerManager.jettyRestart();
 ````
 
+**If your IDE cannot load the dependencies automatically, don't forget to store them in the pom.xml**
+````
+    <dependency>
+      <groupId>org.eclipse.jetty</groupId>
+      <artifactId>jetty-server</artifactId>
+      <version>9.4.51.v20230217</version>
+    </dependency>
+````
+````
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>LATEST</version>
+    </dependency>
+````
+
 ## Configuration
 To configure the web server port, modify the webServerPort value in your plugin's configuration file.
 
